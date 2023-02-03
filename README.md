@@ -2,7 +2,7 @@
 
 A YouTube tutorial I've made can be found [here](https://youtu.be/yrEKYkIK-Fw).
 
-Feel free to contact me if you have any questions.
+Feel free to contact me on twitter if you have any questions.
 
 The steps I followed are the following
 
