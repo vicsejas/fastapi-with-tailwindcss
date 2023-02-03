@@ -1,6 +1,8 @@
-# FastAPI + TailwindCSS Tutorial
+# FastAPI + TailwindCSS Example
 
-A YouTube tutorial can be found [here](https://youtu.be/yrEKYkIK-Fw).
+A YouTube tutorial I've made can be found [here](https://youtu.be/yrEKYkIK-Fw).
+
+Feel free to contact me if you have any questions.
 
 The steps I followed are the following
 
@@ -33,7 +35,8 @@ pip install Jinja2
 ### 2.- Return HTML from your FastAPI route
 
 **Create a "templates" folder in your project**
-inside the folder create a "base.html" file
+
+Inside this folder create a "base.html" file
 
 **Add the TemplateResponse to your route response**
 
