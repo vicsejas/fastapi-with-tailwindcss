@@ -81,7 +81,7 @@ module.exports = {
 
 ```
 
-### 6.- Create a new folder "styles" inside your tailwind folder
+### 6.- Create a new folder "styles" inside your tailwindcss folder
 
 Here we will be adding our custom styles, by creating a new file "styles.css" and adding the base directives
 
@@ -93,8 +93,9 @@ Here we will be adding our custom styles, by creating a new file "styles.css" an
 
 ### 7.- Run the TailwindCSS CLI build process
 
-This proccess will generate a "app.css" file inside a new static/css folder
-The "--watch" flag will make sure that the file is updated every time you make a change to your styles
+This proccess will generate a "app.css" file inside a new "static/css" folder.
+
+The "--watch" flag will make sure that the styles are updated every time you make a change in your files.
 
 ```sh
 npx tailwindcss -i ./styles/app.css -o ../static/css/app.css --watch
@@ -102,17 +103,17 @@ npx tailwindcss -i ./styles/app.css -o ../static/css/app.css --watch
 
 ### 8.- Add the TailwindCSS stylesheet to your base.html file
 
-**mount the static folder**
+**Mount the static folder**
 
 In order to mount this folder we need to add the following lines to our main.py file
 
-import the static files
+Import the static files
 
 ```sh
 from fastapi.staticfiles import StaticFiles
 ```
 
-add the static folder to your app
+Add the static folder to your app
 
 ```sh
 app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -126,9 +127,7 @@ Now we can add the stylesheet to our base.html file
 
 ### 9.- Serving compressed files with the GZip middleware
 
-In order to serve compressed files we need to install the following package
-
-import the middleware
+In order to serve compressed files we need to import the middleware
 
 ```sh
 from fastapi.middleware.gzip import GZipMiddleware
@@ -142,7 +141,7 @@ app.add_middleware(GZipMiddleware)
 
 ## Script for running the TailwindCSS CLI build process
 
-you can create a script inside your package.json file to run the TailwindCSS CLI build process
+We can create a script inside your package.json file to run the TailwindCSS CLI build process
 
 ```sh
 "scripts": {
