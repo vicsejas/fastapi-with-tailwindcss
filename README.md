@@ -2,13 +2,13 @@
 
 A YouTube tutorial I've made can be found [here](https://youtu.be/yrEKYkIK-Fw).
 
-Feel free to contact me on twitter if you have any questions.
+Feel free to contact me on [x(twitter)](https://twitter.com/vicsejas). if you have any questions.
 
-The steps I followed are the following
+The steps I followed are the following.
 
 ## Instructions
 
-### 1.- Setup your FastAPI
+### 1.- Setup your FastAPI project
 
 You need to install
 
@@ -59,15 +59,26 @@ Here we will be adding the TailwindCSS files
 
 ### 4.- Install TailwindCSS
 
-Start a new terminal inside your project folder and run the following command
+Start a new terminal inside your project folder and run the following command, with the package manager you'd like to use
 
+#### npm
 ```sh
 npm install tailwindcss
 ```
 
+#### pnpm
+```sh
+pnpm install tailwindcss
+```
+
+#### yarn
+```sh
+yarn add tailwindcss
+```
+
 ### 5.- Create a "tailwind.config.js" file
 
-This file will be used to configure TailwindCSS, and make sure you include in content the path to your templates folder
+This file will be used to configure TailwindCSS, and make sure you include in content the relative path to your templates folder
 
 ```sh
 /** @type {import('tailwindcss').Config} */
@@ -141,7 +152,7 @@ app.add_middleware(GZipMiddleware)
 
 ## Script for running the TailwindCSS CLI build process
 
-We can create a script inside your package.json file to run the TailwindCSS CLI build process
+We can create a script in the package.json file to run the TailwindCSS CLI build process
 
 ```sh
 "scripts": {
