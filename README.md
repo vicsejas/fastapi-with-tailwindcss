@@ -159,3 +159,12 @@ We can create a script in the package.json file to run the TailwindCSS CLI build
     "dev": "npx tailwindcss -i ./styles/app.css -o ../static/css/app.css --watch"
 },
 ```
+
+And then simply run 
+
+```sh
+npm run dev
+```
+
+to run the Tailwind CSS build process
+
