@@ -162,8 +162,19 @@ We can create a script in the package.json file to run the TailwindCSS CLI build
 
 And then simply run 
 
+#### npm
 ```sh
 npm run dev
+```
+
+#### pnpm
+```sh
+pnpm dev
+```
+
+#### yarn
+```sh
+yarn dev
 ```
 
 to run the Tailwind CSS build process
