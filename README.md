@@ -95,7 +95,7 @@ and then run the following command, with the package manager you'd like to use.
 #### npm
 
 ```sh
-npm install tailwindcss
+npm install tailwindcss @tailwindcss/cli 
 ```
 
 #### pnpm
