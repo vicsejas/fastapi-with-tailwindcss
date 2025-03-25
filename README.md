@@ -1,10 +1,10 @@
-# FastAPI + TailwindCSS Example
+# Updated FastAPI + Tailwind CSS v4.0 Example
 
-A YouTube tutorial I've made can be found [here](https://youtu.be/yrEKYkIK-Fw).
+A YouTube tutorial for version v4.0 soon.
+
+Deprecated(for V3.0): A YouTube tutorial I've made can be found [here](https://youtu.be/yrEKYkIK-Fw).
 
 Feel free to contact me on [x(twitter)](https://twitter.com/vicsejas). if you have any questions.
-
-The steps I followed are the following.
 
 ## Instructions
 
@@ -95,39 +95,22 @@ and then run the following command, with the package manager you'd like to use.
 #### npm
 
 ```sh
-npm install tailwindcss @tailwindcss/cli 
+npm install -D tailwindcss @tailwindcss/cli 
 ```
 
 #### pnpm
 
 ```sh
-pnpm install tailwindcss
+pnpm install -D tailwindcss @tailwindcss/cli 
 ```
 
 #### yarn
 
 ```sh
-yarn add tailwindcss
+yarn add -D tailwindcss @tailwindcss/cli
 ```
 
-### 5.- Create a "tailwind.config.js" file
-
-This file will be used to configure Tailwind CSS and is located inside our "tailwindcss" folder.
-
-Make sure you include in the content property the relative path to our "templates" folder.
-
-```js
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["../templates/**/*.html"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
-```
-
-### 6.- Create a new folder "styles" inside your tailwindcss folder
+### 5.- Create a new folder "styles" inside your tailwindcss folder
 
 Here we will be adding our custom styles.
 
@@ -146,22 +129,21 @@ touch styles/app.css
 then add the following directives.
 
 ```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@source "../../templates";
 ```
 
-### 7.- Run the TailwindCSS CLI build process
+### 6.- Run the TailwindCSS CLI build process
 
 This proccess will generate a "app.css" file inside a new "static/css" folder.
 
 The "--watch" flag will make sure that the styles are updated every time you make a change in your files.
 
 ```sh
-npx tailwindcss -i ./styles/app.css -o ../static/css/app.css --watch
+npx @tailwindcss/cli -i ./styles/app.css -o ../static/css/app.css --watch
 ```
 
-### 8.- Add the TailwindCSS stylesheet to your base.html file
+### 7.- Add the TailwindCSS stylesheet to your base.html file
 
 **Mount the static folder**
 
@@ -185,7 +167,7 @@ Now we can add the stylesheet to our base.html file.
 <link href="{{url_for('static',path='/css/app.css')}}" rel="stylesheet" />
 ```
 
-### 9.- Serving compressed files with the GZip middleware
+### 8.- Serving compressed files with the GZip middleware
 
 In order to serve compressed files we need to import the middleware.
 
@@ -201,7 +183,7 @@ We can create a script in the package.json file to run the TailwindCSS CLI build
 
 ```js
 "scripts": {
-    "dev": "npx tailwindcss -i ./styles/app.css -o ../static/css/app.css --watch"
+    "dev": "npx @tailwindcss/cli -i ./styles/app.css -o ../static/css/app.css --watch"
 },
 ```
 
@@ -227,4 +209,4 @@ yarn dev
 
 to run the Tailwind CSS build process.
 
-Now you have Tailwind CSS set up in your FastAPI project.
+Now you have Tailwind CSS v4.0 set up in your FastAPI project.
