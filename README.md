@@ -1,8 +1,8 @@
 # Updated FastAPI + Tailwind CSS v4.0 Example
 
-A YouTube tutorial for version v4.0 soon.
+Update for Tailwind CSS v4.0: A YouTube tutorial I've made for v4.0 can be found [here](https://youtu.be/T9c-S50t7Us).
 
-Deprecated(for V3.0): A YouTube tutorial I've made can be found [here](https://youtu.be/yrEKYkIK-Fw).
+Deprecated(for Tailwind CSS v3.0): A YouTube tutorial I've made for v3.0 can be found [here](https://youtu.be/yrEKYkIK-Fw).
 
 Feel free to contact me on [x(twitter)](https://twitter.com/vicsejas). if you have any questions.
 
